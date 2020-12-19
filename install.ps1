@@ -20,6 +20,9 @@
 
 # For organizational deployments of Chocolatey, please see https://chocolatey.org/docs/how-to-setup-offline-installation
 
+# Install via: 
+# Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
+
 # Environment Variables, specified as $env:NAME in PowerShell.exe and %NAME% in cmd.exe.
 # For explicit proxy, please set $env:chocolateyProxyLocation and optionally $env:chocolateyProxyUser and $env:chocolateyProxyPassword
 # For an explicit version of Chocolatey, please set $env:chocolateyVersion = 'versionnumber'
